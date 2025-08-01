@@ -26,10 +26,7 @@
         },
         "test": {
           "builder": "@angular-devkit/build-angular:jest",
-          "options": {
-            "tsConfig": "projects/library-arq/tsconfig.spec.json",
-            "jestConfig": "projects/library-arq/jest.config.js"
-          }
+          "options": {}
         }
       }
     },
