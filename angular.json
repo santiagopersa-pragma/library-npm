@@ -3,23 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "library-arq": {
+    "__library-name__": {
       "projectType": "library",
-      "root": "projects/library-arq",
-      "sourceRoot": "projects/library-arq/src",
+      "root": "projects/__library-name__",
+      "sourceRoot": "projects/__library-name__/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/library-arq/ng-package.json"
+            "project": "projects/__library-name__/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/library-arq/tsconfig.lib.prod.json"
+              "tsConfig": "projects/__library-name__/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/library-arq/tsconfig.lib.json"
+              "tsConfig": "projects/__library-name__/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,6 +27,16 @@
         "test": {
           "builder": "@angular-devkit/build-angular:jest",
           "options": {}
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/__library-name__/**/*.ts",
+              "projects/__library-name__/**/*.html"
+            ],
+            "eslintConfig": "projects/__library-name__/eslint.config.js"
+          }
         }
       }
     },
