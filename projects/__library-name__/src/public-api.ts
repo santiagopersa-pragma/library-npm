@@ -1,5 +1,5 @@
 /*
- * Public API Surface of library-arq
+ * Public API Surface
  */
 
 // Components

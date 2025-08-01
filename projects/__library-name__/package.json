@@ -1,5 +1,5 @@
 {
-  "name": "@username/library-arq",
+  "name": "@__username__/__library-name__",
   "private": "true",
   "version": "0.0.1",
   "peerDependencies": {
