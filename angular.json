@@ -88,7 +88,7 @@
                 "input": "projects/demo/public"
               }
             ],
-            "styles": ["projects/demo/src/styles.scss"],
+            "styles": [],
             "scripts": []
           },
           "configurations": {
@@ -142,7 +142,7 @@
                 "input": "projects/demo/public"
               }
             ],
-            "styles": ["projects/demo/src/styles.scss"],
+            "styles": [],
             "scripts": []
           }
         }
